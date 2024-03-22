@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:background="@color/md_blue_50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/lay_back_white"
+        android:id="@+id/input_relativeLayout">
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="请输入文本"
+            android:inputType="text"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/input_relativeLayout"
+        android:id="@+id/btn_relativeLayout">
+
+        <Button
+            android:id="@+id/statisticBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="108px"
+            android:background="@drawable/btn_green_gray"
+            android:text="统计"
+            android:textSize="24dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/table_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/btn_relativeLayout"
+        android:background="@drawable/lay_back_blue">
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+            <!-- 这里是你的TableRow和其他内容 -->
+        </TableLayout>
+    </ScrollView>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:layout_below="@+id/table_ScrollView"-->
+<!--        android:background="@drawable/lay_back_white"-->
+<!--        android:id="@+id/view_relativeLayout">-->
+<!--        <TextView-->
+<!--            android:id="@+id/view_result"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:gravity="center">-->
+<!--        </TextView>-->
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
